@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal|fill_horizontal|center_vertical|fill_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Processo" />
+
+        <EditText
+            android:id="@+id/etProcesso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="358dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="31dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btGravar"
+                android:layout_marginRight="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_green_dark"
+                android:text="REC"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btEnviar"
+                android:layout_marginRight="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_dark"
+                android:text="SEND"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btAssistir"
+                android:layout_marginRight="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_dark"
+                android:text="OPEN"
+                android:textColor="@android:color/background_light" />
+
+            <Button
+                android:id="@+id/btCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_dark"
+                android:text="FILES"
+                android:textColor="@android:color/background_light" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
