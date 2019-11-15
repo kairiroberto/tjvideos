@@ -40,7 +40,7 @@ public class ListVideoActivity extends AppCompatActivity implements AdapterView.
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, strings);
         lv.setAdapter(adapter);
         lv.setOnItemClickListener(this);
-        autenticacao("css01cri@tjrn.jus.br", "Tribunal@123");
+        autenticacao("    ", "    ");
         listar();
     }
 
@@ -71,11 +71,6 @@ public class ListVideoActivity extends AppCompatActivity implements AdapterView.
 
                                             for (StorageReference item : listResult.getItems()) {
                                                 // All the items under listRef.
-                                                //https://firebasestorage.googleapis.com/v0/b/usuario-78a96.appspot.com/o/pjevideos.png?alt=media&token=43b0492d-7b85-48fd-8208-90d9a1340f3b
-                                                //String uri = "https://firebasestorage.googleapis.com/v0/b/usuario-78a96.appspot.com/o/" + item.getName() + "?alt=media&token=43b0492d-7b85-48fd-8208-90d9a1340f3b";
-                                                //Toast.makeText(ListVideoActivity.this, uri.toString(), Toast.LENGTH_LONG).show();
-                                                //strings.add(uri);
-                                                //tv.setText(tv.getText() + uri + "\n\n");
                                                 download(item.getName());
                                             }
                                         }
@@ -130,11 +125,7 @@ public class ListVideoActivity extends AppCompatActivity implements AdapterView.
         StringBuffer sb = new StringBuffer();
         sb.append("ARQUIVOS DE VÍDEO DO PJE");
         sb.append("\n\n");
-        sb.append("Os vídeos que os OJ estão gravando está sendo enviado diretamente para o e-mail da Secretaria. ");
-        sb.append("Na verdade é enviado um link através do GMAIL (JOSÉ Silva) para baixar os vídeos. ");
-        sb.append("Os vídeos estão sendo salvos na pasta: \\\\Css02vara02\\arquivos criminal\\2ª Vara\\videos-interdicao. ");
-        sb.append("O único formato de mídia permitido atualmente é o MP3, sendo assim, é necessário converter o formato de vídeo para áudio em caso de juntada. ");
-        sb.append("As opções de download de vídeo nos browser vária de aplicativo para aplicativo e de versão para versão.");
+        sb.append("Os vídeos que os OJ estão gravando está sendo enviado diretamente para o e-mail da Secretaria. ");        
         sb.append("\n\n");
         sb.append("LINK: ");
         sb.append(strings.get(position).substring(strings.get(position).indexOf(":")+1));
