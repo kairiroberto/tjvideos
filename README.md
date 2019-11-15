@@ -1,5 +1,4 @@
-#BUILD.GRADLE (MODULE: APP)
-
+# BUILD.GRADLE (MODULE: APP)
 
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
@@ -34,7 +33,7 @@ dependencies {
 }
 
 
-#BUILD.GRADLE (PROJECT: AppVideos)
+# BUILD.GRADLE (PROJECT: AppVideos)
 
 buildscript {
     repositories {
@@ -64,7 +63,7 @@ task clean(type: Delete) {
 }
 
 
-#GRADLE-WRAPPER.PROPERTIES
+# GRADLE-WRAPPER.PROPERTIES
 
 distributionBase=GRADLE_USER_HOME
 distributionPath=wrapper/dists
