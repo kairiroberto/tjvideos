@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         auth = FirebaseAuth.getInstance();
 
-        autenticacao("css01cri@tjrn.jus.br", "Tribunal@123");
+        autenticacao("     ", "     ");
 
     }
 
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void enviar() {
         if (auth.getCurrentUser() == null) {
-            autenticacao("css01cri@tjrn.jus.br", "Tribunal@123");
+            autenticacao("     ", "     ");
         } else {
             upload();
         }
